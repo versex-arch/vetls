@@ -56,7 +56,7 @@ jobs:
           /tmp/wheel-env/bin/vetls --version
           /tmp/wheel-env/bin/vetls --list-rules
           /tmp/wheel-env/bin/python -c "import vetls, pathlib; assert (pathlib.Path(vetls.__file__).parent / 'py.typed').exists()"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: dist
           path: dist/
